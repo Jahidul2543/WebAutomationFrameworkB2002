@@ -20,12 +20,13 @@ public class ContactUsTest extends BrowserDriver {
 
 
     @Test
-    public void sendAMessageTest(){
+    public void sendAMessageTest() throws InterruptedException {
         homePage.clickContactUs();
         contactUsPage.sendText();
         contactUsPage.clickSubmitButton();
         String actualErrorMessage = contactUsPage.getErrorMessage();
         Assert.assertEquals(actualErrorMessage, "There is 1 error");
+        Thread.sleep(3000);
 
     }
 }

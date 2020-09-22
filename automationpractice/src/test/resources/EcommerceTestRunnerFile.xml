@@ -4,14 +4,13 @@
 <suite name="Automation Test" parallel="false" >
     <!--parallel="false"-->
 
-    <parameter name="useCloudEnv" value="true"/>
-    <parameter name="cloudEnvName" value="browserstack"/>
-    <parameter name="os" value="Windows"/>
-    <parameter name="os_version" value="10"/>
-    <parameter name="browserVersion" value="81.0"/>
-    <parameter name="browserName" value="Chrome"/>
-    <parameter name="url" value="http://automationpractice.com"/>
-
+    <!--<parameter name="useCloudEnv" value="true"/>-->
+    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <!--<parameter name="os" value="Windows"/>-->
+    <!--<parameter name="os_version" value="10"/>-->
+    <!--<parameter name="browserVersion" value="81.0"/>-->
+    <!--<parameter name="browserName" value="Chrome"/>-->
+    <!--<parameter name="url" value="http://automationpractice.com"/>-->
 
 <test name = "Ecommerce Home">
 
