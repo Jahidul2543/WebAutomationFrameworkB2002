@@ -1,13 +1,11 @@
-package junk;
+package dataprovider;
 
 import databse_utilities.DBUtilities;
-import reporting.TestLogger;
-
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Data {
+public class DBDataProvider {
 
 
     public static String[][] dataSupplier() throws IOException, SQLException {

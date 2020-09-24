@@ -1,7 +1,7 @@
 package page_objects_test;
 
 import browserdriver.BrowserDriver;
-import junk.Data;
+import dataprovider.DBDataProvider;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +12,6 @@ import page_objects.HomePage;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Date;
 
 public class ContactUsTest extends BrowserDriver {
     HomePage homePage = null;
@@ -26,7 +25,7 @@ public class ContactUsTest extends BrowserDriver {
 
     @DataProvider
     public Object[][] dataProvider() throws IOException, SQLException {
-       Object[][] data = Data.dataSupplier();
+       Object[][] data = DBDataProvider.dataSupplier();
        return data;
     }
 
