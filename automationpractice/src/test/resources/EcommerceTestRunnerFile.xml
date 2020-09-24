@@ -16,7 +16,6 @@
 
     <classes>
         <class name="page_objects_test.ContactUsTest"/>
-        <class name="page_objects_test.HomePageTest"/>
     </classes>
 
  <!--Hello-->

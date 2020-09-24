@@ -1,5 +1,6 @@
 package page_objects;
 
+import helper.ApplicationHelper;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -16,12 +17,20 @@ public class ContactUsPage {
     @FindBy(how = How.XPATH, using = "//div[@id='center_column']/div/p")
     WebElement errorMessage;
 
-    public void sendText(){
-        TestLogger.log("Sending texts to message box");
-        messageBox.sendKeys("Hello Writing from web automation framework");
-        TestLogger.log("Message written in message box");
-        clickSubmitButton();
+    @FindBy(how = How.ID, using = "email")
+    WebElement emailBox;
 
+    public void writeEmailValue(String email){
+        ApplicationHelper.sendKeys("EmailBox", emailBox, email);
+    }
+
+
+    public void sendText(String message){
+       /* TestLogger.log("Sending texts to message box");
+        messageBox.sendKeys("Hello Writing from web automation framework");
+        TestLogger.log("Message written in message box");*/
+        ApplicationHelper.sendKeys("messageBox", messageBox, message);
+        clickSubmitButton();
     }
 
     public void clickSubmitButton() {

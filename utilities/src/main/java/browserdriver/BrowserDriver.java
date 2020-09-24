@@ -20,7 +20,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
-
 import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;

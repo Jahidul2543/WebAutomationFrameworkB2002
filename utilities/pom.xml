@@ -54,6 +54,10 @@
              <groupId>com.google.apis</groupId>
              <artifactId>google-api-services-sheets</artifactId>
          </dependency>-->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
 
     </dependencies>
 </project>
