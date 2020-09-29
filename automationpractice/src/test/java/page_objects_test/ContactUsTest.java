@@ -37,7 +37,7 @@ public class ContactUsTest extends BrowserDriver {
         contactUsPage.clickSubmitButton();
         String actualErrorMessage = contactUsPage.getErrorMessage();
         Assert.assertEquals(actualErrorMessage, "There is 1 error");
-        Thread.sleep(3000);
+        System.out.println("Test Passed");
 
     }
 }
