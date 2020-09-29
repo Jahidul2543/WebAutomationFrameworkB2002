@@ -16,7 +16,7 @@
 
     <classes>
         <class name="page_objects_test.ContactUsTest"/>
-        <class name="page_objects_test.ContactUsUsingExcelFileTest"/>
+        <!--<class name="page_objects_test.ContactUsUsingExcelFileTest"/>-->
     </classes>
 
  <!--Hello-->
